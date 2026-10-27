@@ -18,26 +18,28 @@ A GitHub webhook triggers Jenkins when code changes are pushed to the repository
 
 ##  Architecture
 
-   text
-Developer
-    |
-    v
+   Developer
+   |
+   v
 GitHub Repository
-    |
-    | GitHub Webhook
-    v
-Jenkins Server (AWS EC2)
-    |
-    | Maven Build
-    v
+   |
+   v
+GitHub Webhook
+   |
+   v
+Jenkins on AWS EC2
+   |
+   v
+Maven Build
+   |
+   v
 WAR File
-    |
-    | Automated Deployment
-    v
-Tomcat Server (AWS EC2)
-    |
-    v
-Taxi/Cab Booking Web Application
+   |
+   v
+Apache Tomcat on AWS EC2
+   |
+   v
+Deployed Web Application
 
 
 ##  CI/CD Workflow
